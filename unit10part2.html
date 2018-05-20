@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>//script to include JQUERY
+    <script>
+        $(document).ready(function(){
+            $("button").on("click",function(){//function to understand button press
+                if(this.id=='btn1')// if it was this button
+                    $("p").append("an item");//then string add or append
+                if(this.id=="btn2")//if it was button 2
+                    $("ol").append("an item");//same append except to ol 
+
+            });
+        });
+    </script>
+</head>
+<body>
+<p>this is a paragraph.</p>
+<p>this is another paragraph.</p>
+<ol>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+</ol>
+<button id="btn1">Append text paragraph end</button>
+<button id="btn2">Append text ol end</button>
+</body>
+</html>
+
